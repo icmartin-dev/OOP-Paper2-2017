@@ -39,7 +39,7 @@ public class Arena {
                 output((i + 1) + " - " + monsters[i].name + " " + monsters[i].health);
             }
             else {
-                output((i + 1) + " - null");
+                output((i + 1) + " - null - empty slot");
             }
         }
     }
