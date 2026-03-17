@@ -26,5 +26,15 @@ public class Arena {
         System.out.println(message);
     }
 
+    public void showMonsters() {
+        for (int i = 0; i < monsterCount; i++) {
+            output((i + 1) + " - " + monsters[i].name + " " + monsters[i].health);
+        }
+    }
 
+    public void showMonstersFull() {
+        for (int i = 0; i < monsters.length; i++) {
+            output((i + 1) + " - " + monsters[i].name + " " + monsters[i].health);
+        }
+    }
 }
