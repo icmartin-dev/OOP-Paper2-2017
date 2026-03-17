@@ -38,6 +38,9 @@ public class Arena {
             if (monsters[i] != null) {
                 output((i + 1) + " - " + monsters[i].name + " " + monsters[i].health);
             }
+            else {
+                output((i + 1) + " - null");
+            }
         }
     }
 }
