@@ -13,7 +13,7 @@ public class Monster {
         this.monsterType = monsterType;
     }
     public void attack(Monster defender) { //to be written
-
+        // TODO
     }
 
     private static int rollDice() { //returns a random integer between 1 and 12
