@@ -1,12 +1,13 @@
 public class Arena {
     public Monster[] monsters = new Monster[10];
     int monsterCount = 0; //the number of monsters currently in array
+
     public void addMonster(Monster M) {
-        // to be written
     }
     public void removeMonster(Monster M) {
-        //to be written
+
     }
+
     public void doOneOnOneBattle(Monster A, Monster B) {
         while (A.health > 0 && B.health > 0) {
             A.attack(B);
@@ -34,7 +35,9 @@ public class Arena {
 
     public void showMonstersFull() {
         for (int i = 0; i < monsters.length; i++) {
-            output((i + 1) + " - " + monsters[i].name + " " + monsters[i].health);
+            if (monsters[i] != null) {
+                output((i + 1) + " - " + monsters[i].name + " " + monsters[i].health);
+            }
         }
     }
 }
